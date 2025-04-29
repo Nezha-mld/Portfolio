@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 15;
+    padding: 15;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+body{
+    background: #180c2f;
+     
+}
+a{  
+    color: #c9bed2;
+    text-decoration:none;
+}.navbar{
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar .logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li {
+    list-style: none;
+    margin-left: 35px;
+}
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+.navbar ul li:hover a,
+.navbar ul li.active a {
+    color: #a96edc;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #fff;
+}
+.home-info h1{
+    font-size: 55px;
+}
+.home-info h2{
+    font-size: 32px;
+    margin-top: -10px;
+}
+.home-info p{
+    font-size: 16px;
+    margin: 10px 0 25px;
+}
+.home-info .btn-sci{
+    display: flex;
+    align-items: center;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #a96edc;
+    border: 2px solid #a96edc;
+    border-radius: 40px;
+    box-shadow: 0 0 10px  #a96edc;
+    font-size: 16px;
+    color: #73598b;
+    font-weight: 600;
+    transition: .5s;
+}
+.btn:hover{
+    background: transparent;
+    color:#fdfcfe;
+    box-shadow: none;
+}
+.home-info .btn-sci .sci{
+    margin-left: 20px;
+}
+.home-info .btn-sci .sci a{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #c1bdc4;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #97929b;
+    margin: 0 8px;
+    transition: .5s;
+}
+.home-info .btn-sci .sci a:hover{
+    background: #470b78 ;
+    color: #1f242d;
+    box-shadow: 0 0 10px #2a0846;
+}
+.home-img .img-box{
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    background: #180c2f;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.home-img .img-box::before{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background:  conic-gradient(transparent,transparent,transparent,#f1f0ecde);
+}
+.home-img .img-box .img-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #180c2f;
+    border-radius: 50%;
+    border: .30px solid rgb(242, 53, 163);
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+}
+.home-img .img-box .img-item img{ 
+    position: absolute;
+    top: 30px;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+
+}
+.home-img .img-box .img-item {
+    position: absolute;
+    top: 30px;
+    display: flex;
+    width: 100%;
+}
+footer {
+    text-align: center;
+    padding: 0px;
+    background-color: #97929b;
+    color: #f5ecf3;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.about {
+    padding: 40px 9%; /* Utilise les mêmes marges que tes autres sections pour la cohérence */
+    margin-bottom: 60px; /* Espacement avec la section suivante */
+    background-color: #1f242d; /* Couleur de fond plus sombre pour contraster avec le fond du body */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée pour la démarquer */
+    color: #fff; /* Texte clair pour le fond sombre */
+}
+
+.about h2 {
+    color: #a96edc; /* Couleur de l'accent de ton portfolio */
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #a96edc; /* Soulignement de l'accent */
+    padding-bottom: 10px;
+}
+
+.about p {
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #c9bed2; /* Couleur de texte secondaire */
+}
+
+.about p:last-child {
+    margin-bottom: 0;
+}
+.about .conclusion {
+    font-style: italic;
+    color: #97929b;
+    text-align: right;
+    font-size: 14px;
+}
+
